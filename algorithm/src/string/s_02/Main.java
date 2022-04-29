@@ -8,14 +8,11 @@ public class Main {
         char[] charArray = str.toCharArray();
         for (char c : charArray) {
             if (c >= 65 && c <= 90) {
-                c = Character.toLowerCase(c);
-                answer += c;
+                answer += (c+32);
             } else {
-                c = Character.toUpperCase(c);
-                answer += c;
+                answer += (c-32);
             }
         }
-
         return answer;
     }
 
